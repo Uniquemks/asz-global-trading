@@ -11,9 +11,9 @@
     --dark-bg: #1E293B;
     /* Slate 800 */
     --gray-border: #E2E8F0;
-    --font-main: 'Inter', sans-serif;
-    --font-heading: 'Playfair Display', serif;
-    /* Optional for elegance */
+    --font-main: 'Outfit', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    /* Updated for modern look */
     --transition: all 0.3s ease;
 }
 
@@ -307,13 +307,18 @@ header.scrolled .hamburger span {
     color: var(--white);
     font-size: 3.5rem;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    /* Removed harsh text-shadow for cleaner look */
 }
 
 .hero-desc {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 40px;
-    opacity: 0.9;
+    opacity: 0.95;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 /* Page Hero (Inner Pages) */
@@ -477,7 +482,7 @@ header.scrolled .hamburger span {
 /* Visual Product Layout */
 .product-grid-visual {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     margin-top: 40px;
 }
@@ -1339,6 +1344,7 @@ footer {
         transition: 0.3s;
         text-align: center;
         padding-top: 50px;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -1359,6 +1365,15 @@ footer {
 
     .hero h1 {
         font-size: 2.5rem;
+        padding: 0 10px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 20px;
     }
 
     .contact-wrapper {
