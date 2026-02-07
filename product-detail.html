@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ASZ Global Trading</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">ASZ Global Trading<span class="highlight">.</span></a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="container">
+            <h1 class="animate-up" id="product-title">Loading...</h1>
+            <p class="breadcrumb animate-up delay-1"><a href="products.html">Products</a> / <span
+                    id="breadcrumb-current">Details</span></p>
+        </div>
+    </section>
+
+    <!-- Product Detail Content -->
+    <section class="section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <div class="product-gallery">
+                    <img id="main-image" src="" alt="Product Image" class="main-img">
+                    <div class="gallery-thumbs" id="gallery-thumbs">
+                        <!-- Thumbs injected by JS -->
+                    </div>
+                </div>
+
+                <div class="product-info-panel">
+                    <div class="cat-badge" id="category-badge">Category</div>
+                    <h2 id="detail-title">Product Name</h2>
+                    <p class="lead-text" id="detail-desc">Description goes here.</p>
+
+                    <div class="specs-box">
+                        <h3>Specifications</h3>
+                        <ul class="specs-list" id="specs-list">
+                            <!-- Specs injected by JS -->
+                        </ul>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Interested in this product?</h3>
+                        <p>We offer bulk purchasing options and global shipping.</p>
+                        <a href="contact.html" class="btn btn-primary btn-block">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>ASZ Global Trading.</h3>
+                <p>Global Trading Solutions Built on Trust & Quality.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 ASZ Global Trading. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Inline JS for Product Data to keep it simple without a backend
+        const productData = {
+            "consumables": {
+                title: "Consumables",
+                image: "https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                desc: "We supply essential food products with consistent regional demand to wholesale distributors and institutional buyers. Our network ensures freshness and quality.",
+                specs: [
+                    "Fresh Fruits: Apples, Bananas, Citrus",
+                    "Dry Fruits: Almonds, Cashews, Dates",
+                    "Vegetables: Onions, Potatoes, Garlic",
+                    "Spices: Saffron, Pepper, Cardamom",
+                    "Origin: Global Sourcing (Asia, Africa, S. America)"
+                ],
+                thumbs: [
+                    "https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                ]
+            },
+            "beverages": {
+                title: "Beverages",
+                image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                desc: "High-turnover beverage categories supporting branded and private-label distribution. We connect you with top manufacturers for bulk supply.",
+                specs: [
+                    "Carbonated Drinks: Cola, Lemon-Lime, Orange",
+                    "Energy Drinks: Standard & Sugar-Free Options",
+                    "Fruit Juices: 100% Juice, Nectars, Blends",
+                    "Bottled Water: Mineral & Spring Water",
+                    "Packaging: Cans, PET Bottles, Tetra Pak"
+                ],
+                thumbs: [
+                    "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                ]
+            },
+            "consumer": {
+                title: "Consumer Goods",
+                image: "https://images.unsplash.com/photo-1590874103328-27cf2679d660?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                desc: "Premium lifestyle products suitable for retail chains, duty-free outlets, and promotional suppliers. Curated for quality and trend appeal.",
+                specs: [
+                    "Leather Goods: Handbags, Wallets, Belts",
+                    "Travel Gear: Backpacks, Luggage",
+                    "Footwear: Formal, Casual, Sports",
+                    "Accessories: Keychains, Card Holders",
+                    "Customization: OEM Branding Available"
+                ],
+                thumbs: [
+                    "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "https://images.unsplash.com/photo-1559563458-527698bf5295?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                ]
+            },
+            "industrial": {
+                title: "Industrial Supplies",
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                desc: "Export-grade industrial supplies for construction, manufacturing, and logistics sectors. Reliable materials for heavy-duty applications.",
+                specs: [
+                    "Construction: MDF Boards, Plywood, Cement",
+                    "Packaging: Industrial Tapes, Stretch Film",
+                    "Materials: Acrylic Sheets, Polycarbonate",
+                    "Hardware: Fasteners, Tools, Safety Gear",
+                    "Standards: ISO Certified Suppliers"
+                ],
+                thumbs: [
+                    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                ]
+            }
+        };
+
+        // Loader Logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const category = params.get('cat');
+
+            if (category && productData[category]) {
+                const data = productData[category];
+
+                // Update Text
+                document.getElementById('product-title').textContent = data.title;
+                document.getElementById('detail-title').textContent = data.title;
+                document.getElementById('breadcrumb-current').textContent = data.title;
+                document.getElementById('category-badge').textContent = category.charAt(0).toUpperCase() + category.slice(1);
+                document.getElementById('detail-desc').textContent = data.desc;
+
+                // Update Images
+                document.getElementById('main-image').src = data.image;
+
+                const thumbsContainer = document.getElementById('gallery-thumbs');
+                data.thumbs.forEach(thumb => {
+                    const img = document.createElement('img');
+                    img.src = thumb;
+                    img.onclick = () => { document.getElementById('main-image').src = thumb; };
+                    thumbsContainer.appendChild(img);
+                });
+
+                // Update Specs
+                const specsList = document.getElementById('specs-list');
+                data.specs.forEach(spec => {
+                    const li = document.createElement('li');
+                    li.textContent = spec;
+                    specsList.appendChild(li);
+                });
+            } else {
+                // Fallback or Redirect
+                document.getElementById('product-title').textContent = "Product Not Found";
+                document.querySelector('.product-detail-layout').innerHTML = "<p class='text-center'>Sorry, the product category you are looking for does not exist.</p><div class='text-center'><a href='products.html' class='btn btn-primary'>Back to Products</a></div>";
+            }
+        });
+    </script>
+</body>
+
+</html>
