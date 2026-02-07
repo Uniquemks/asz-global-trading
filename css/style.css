@@ -1385,3 +1385,45 @@ footer {
         width: 100%;
     }
 }
+
+/* Galaxy Z Fold 5 (Folded) & Small Screens */
+@media (max-width: 360px) {
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Developer Credit */
+.developer-credit {
+    font-size: 0.85rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.dev-name {
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dev-name:hover {
+    background: linear-gradient(90deg, #FF0080, #FF8C00, #40E0D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
