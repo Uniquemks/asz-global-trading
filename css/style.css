@@ -1453,7 +1453,7 @@ footer {
         font-size: 1.2rem;
         color: var(--primary-color);
         display: block;
-        padding: 15px 0;
+        padding: 15px;
         border-bottom: 1px solid var(--gray-border);
         width: 100%;
     }
