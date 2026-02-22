@@ -110,3 +110,25 @@ window.goToSlide = function (n) {
     showTestSlide(n);
     testInterval = setInterval(nextTestSlide, 6000); // Restart auto-play
 };
+// Scroll Reveal Animation (Intersection Observer)
+const revealElements = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            // Once revealed, we can stop observing this specific element
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Re-initialize for dynamic content if needed
+window.refreshReveal = () => {
+    document.querySelectorAll('.reveal:not(.revealed)').forEach(el => revealObserver.observe(el));
+};
