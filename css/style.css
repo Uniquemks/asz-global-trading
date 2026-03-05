@@ -1335,6 +1335,68 @@ footer {
     }
 }
 
+/* Minimal Leadership Section (Image-less) */
+.leadership-minimal {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ceo-name-premium {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.ceo-name-premium::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.ceo-title-minimal {
+    display: block;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.leadership-minimal h2 {
+    font-size: var(--fs-h2);
+    margin-bottom: 30px;
+}
+
+.leadership-minimal .lead-text {
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.leadership-minimal .leadership-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 20px 0;

@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Smooth Scroll for anchor links
+
 // Smooth Scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
